@@ -1,0 +1,63 @@
+{% if login == True %}
+<h3> 로그인에 성공했습니다. {{username}}님 어서오세요!</h3>
+<a href = {{url_for("logout")}}> 로그아웃</a>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link rel="stylesheet" href="/">
+  
+    
+  <title>GB.케어</title>  
+</head>
+<body>
+    <!-- 페이지 제목 -->
+    <header>
+        <h1>GB.CARE</h1>
+        <h2>경주정보고 프로젝트</h2>
+        <a href="https://gbcare-login.netlify.app/">로그인</a>
+    </header>
+    
+  <!-- 페이지 종류 -->
+    <main>
+
+        <div class="page-group" >
+            <a href="급식/page1.html">급식</a>
+        </div>
+
+        <div class="page-group" >
+            <a href="/templates/상벌점/page2.html">점수</a>
+        </div>
+
+        <div class="page-group" >
+            <a href="/templates/상벌점/page2.html">소식</a>
+        </div>
+
+        <div class="page-group" >
+            <a href="/templates/질문/page4.html">질문</a>
+        </div>
+     
+    </main>
+
+    <footer>
+        <div class="footer">
+            <a href="https://www.naver.com/">Naver</a>
+            <a href="https://google.com">Google</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.youtube.com/@user-wx7gj9pk8v">Youtube</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+
+{%else %}
+<h3>로그인 페이지</h3>
+<form methods="get" id="login" action={{url_for("login")}}>
+    <input type="id" id="loginID" name="loginID" placeholder="ID">
+    <input type="password" id="loginPW" name="loginPW" placeholder="password">
+    <button type="submit" class="login">로그인</button>
+
+</form>
+{%endif%}

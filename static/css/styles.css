@@ -1,0 +1,146 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+@keyframes warning {
+    0% {transform: translateX(-8px);}
+    25% {transform: translateX(8px);}
+    50% {transform: translateX(-8px);}
+    75% {transform: translateX(8px);}}
+/* 전체 페이지 스타일링 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5ef;
+}
+
+/* gj 정보고 로고 */
+
+
+
+
+/* 페이지 제목 스타일링 */
+header h1{
+    font-size: 100px;
+    font-family: 'Arial', sans-serif;
+    color: #f1f5ef;
+    text-align: center;
+    margin: 0;
+    font-weight: 800;
+    background-color: #136bae;
+    
+    
+    
+}
+header h2{
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #f1f5ef;
+    text-align: center;
+    margin: 10;
+    font-weight: 750;
+    margin-top: auto;
+    background-color: #000000;
+    outline: #000000 solid 5px;
+    
+    
+    
+}
+
+header a{
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    border-radius: 16px;
+    margin-top: auto;
+    
+   
+    
+}
+
+
+/* 메인 섹션 스타일링 */
+main {
+    text-align: center;
+    margin: 0%;
+    
+    
+}
+
+/* footer */
+footer div {
+    background-color: #000000;   
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    
+}
+
+footer div a{
+    background-color: #136bae;
+    font-size: 20px;
+    width : 100px;
+    text-align: center;
+    outline: #ffffff solid 5px;
+   
+    
+
+}
+
+
+
+
+
+/* 로그인 버튼 스타일링 */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #136bae;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 50px;
+    margin: 10px; /* 링크 간격을 5px로 설정 */
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    border: 3px rgba(0, 0, 0, 0.2) solid;
+    text-align: center;
+    font-weight: normal;
+    top: 100%;
+    font-weight: 700;
+    outline: #000000 solid 5px;
+    
+      
+}
+
+
+
+a:hover {
+    background-color: #385972;
+}
+
+.page-group {
+    display: inline-block;
+    width: 25%; /* 4분할을 위해 각 링크의 너비를 25%로 설정 */
+    margin: 50px;
+    padding: 5%;
+    
+    
+    
+}
+
+.page-group a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #136bae;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 80px;
+    border-radius: 28px;
+    border: 3px rgba(0, 0, 0, 0.2) solid;
+    transition: background-color 0.3s;
+    outline: #000000 solid 7px;
+    text-align: center;
+    
+}
+
+.page-group a:hover {
+    background-color: #0b294f;
+}
